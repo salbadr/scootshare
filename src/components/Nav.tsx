@@ -4,7 +4,7 @@ import './Nav.css'
 type NavLinkClassNames = {
     isActive: boolean;
 }
-
+//Navigation
 export default function Nav() {
 
     function generateClassNames({ isActive }: NavLinkClassNames) {
