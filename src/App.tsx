@@ -8,17 +8,19 @@ import Nav from '@/components/Nav'
 function App() {
 
   return (
-    <main className='h-screen'>
 
 
-      <BrowserRouter>
-        <Nav/>
+
+    <BrowserRouter>
+      <Nav />
+      <main className='h-screen mt-20' >
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
         </Routes>
-      </BrowserRouter>
-    </main>
+      </main>
+
+    </BrowserRouter>
 
 
   )
