@@ -18,7 +18,7 @@ export default function Home() {
         {
             icon: PiLightning,
             heading: 'Quick & Easy',
-            description: 'Unlock and rid in seconds with our mobile app'
+            description: 'Unlock and ride in seconds with our mobile app'
         },
         {
             icon: FaMapMarkerAlt,
@@ -49,16 +49,21 @@ export default function Home() {
                 </div>
                 <div className="flex justify-evenly gap-10 flex-wrap items-center mt-20">
 
-                    {cards.map(card => (
-                        <div className="card border 
+                    {cards.map(card => {
+                        const Icon = card.icon;
+                        return (
+                            <div key={card.heading}
+
+                                className="card border 
                         border-solid rounded-xl border-zinc-200
                         flex justify-evenly items-center 
-                        flex-col hover:shadow-lg p-6 gap-6">
-                            {<card.icon className="text-2xl text-amber-600" />}
-                            <h3 className="text-2xl font-semibold">{card.heading}</h3>
-                            <p className="text-center w-3xs">{card.description}</p>
-                        </div>
-                    ))}
+                        flex-col hover:shadow-lg transition-shadow duration-300 p-6 gap-6">
+                                {<Icon className="text-2xl text-amber-600" />}
+                                <h3 className="text-2xl font-semibold">{card.heading}</h3>
+                                <p className="text-center w-3xs">{card.description}</p>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
 
