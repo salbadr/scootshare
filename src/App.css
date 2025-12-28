@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
-main{
+main, nav{
     color: var(--color-zinc-700);
 }
