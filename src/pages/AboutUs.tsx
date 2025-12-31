@@ -8,7 +8,7 @@ import { FiUsers } from "react-icons/fi";
 import type { CardsType } from "@/types";
 
 export default function About() {
-    const stepsCards: CardsType[] = [
+    const valuesCards: CardsType[] = [
         {
             id: useId(),
             icon: IoShieldOutline,
@@ -71,7 +71,7 @@ export default function About() {
                     <p className="text-zinc-500">The principles that guide everything we do</p>
                 </div>
                 <div className="flex justify-evenly gap-10 flex-wrap items-center mt-20">
-                    {stepsCards.map(card => {
+                    {valuesCards.map(card => {
                         const Icon = card.icon!;
                         return (
                             <Card key={card.id} className="text-center">
