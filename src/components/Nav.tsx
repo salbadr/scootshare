@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdClose } from "react-icons/md";
 
@@ -41,7 +41,7 @@ export default function Nav() {
     return (<nav className="flex z-50 bg-white justify-between items-center flex-wrap
     border-t border-b border-gray-300 px-6 py-3 sticky top-0 shadow-md shadow-stone-200">
         <div>
-            <span>Logo</span>
+            <Link to="/">Logo</Link>
         </div>
 
         <div className="hidden md:flex gap-5">
